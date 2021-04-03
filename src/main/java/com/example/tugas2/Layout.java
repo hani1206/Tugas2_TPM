@@ -17,13 +17,8 @@ public class Layout extends AppCompatActivity {
         String h = b.getString("huruf");
         String s = b.getString("nama");
         String d = b.getString("nim");
-        String f = b.getString("nilai");
-        //getnama = b.getString("nama");
-        //getnim = b.getString("nim");
-        //getnilai = b.getString("nilai");
         n.setText(s);
         ni.setText(d);
         nil.setText(h);
-        //gethuruf = b.getString("huruf");
     }
 }

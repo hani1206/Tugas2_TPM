@@ -13,9 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText enama, enim, enilai;
     TextView huruf;
-    double vnilai;
     Button btn_satu;
-    //String vhuruf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,31 +47,31 @@ public class MainActivity extends AppCompatActivity {
     private void hitung() {
         Double vnilai = Double.parseDouble(enilai.getText().toString());
         String vhuruf = "";
-        if (vnilai < 3.66 | vnilai <= 4.00) {
+        if (vnilai > 3.66 | vnilai >= 4.00) {
             vhuruf = "A";
         }
-        else if (vnilai < 3.33 | vnilai <= 3.66){
+        else if (vnilai > 3.33 | vnilai >= 3.66){
             vhuruf = "A-";
         }
-        else if (vnilai < 3.00 | vnilai <= 3.33){
+        else if (vnilai > 3.00 | vnilai >= 3.33){
             vhuruf = "B+";
         }
-        else if (vnilai < 2.66 | vnilai <= 3.00){
+        else if (vnilai > 2.66 | vnilai >= 3.00){
             vhuruf = "B";
         }
-        else if (vnilai < 2.33 | vnilai <= 2.66){
+        else if (vnilai > 2.33 | vnilai >= 2.66){
             vhuruf = "B-";
         }
-        else if (vnilai < 2.00 | vnilai <= 2.33){
+        else if (vnilai > 2.00 | vnilai >= 2.33){
             vhuruf = "C+";
         }
-        else if (vnilai < 1.66 | vnilai <= 2.00){
+        else if (vnilai > 1.66 | vnilai >= 2.00){
             vhuruf = "C";
         }
-        else if (vnilai < 1.33 | vnilai <= 1.66){
+        else if (vnilai > 1.33 | vnilai >= 1.66){
             vhuruf = "C-";
         }
-        else if (vnilai < 1.00 | vnilai <= 1.33){
+        else if (vnilai > 1.00 | vnilai >= 1.33){
             vhuruf = "D+";
         }
         else if (vnilai == 1.00){
@@ -81,38 +79,4 @@ public class MainActivity extends AppCompatActivity {
         }
         huruf.setText(vhuruf);
     }
-    /*public void proses(View view) {
-        vnilai = Double.parseDouble(enilai.getText().toString());
-
-        if (vnilai >= 4.00) {
-            vhuruf = "A";
-        }
-        else if (vnilai >= 3.66){
-            vhuruf = "A-";
-        }
-        else if (vnilai >= 3.33){
-            vhuruf = "B+";
-        }
-        else if (vnilai >= 3.00){
-            vhuruf = "B";
-        }
-        else if (vnilai >= 2.66){
-            vhuruf = "B-";
-        }
-        else if (vnilai >= 2.33){
-            vhuruf = "C+";
-        }
-        else if (vnilai >= 2.00){
-            vhuruf = "C";
-        }
-        else if (vnilai >= 1.66){
-            vhuruf = "C-";
-        }
-        else if (vnilai >= 1.33){
-            vhuruf = "D+";
-        }
-        else if (vnilai == 1.00){
-            vhuruf = "D";
-        }
-        }*/
 }
