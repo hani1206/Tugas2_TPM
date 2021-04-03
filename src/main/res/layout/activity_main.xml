@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tugas2.MainActivity">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile"
+            android:layout_width="250dp"
+            android:layout_height="250dp"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/nama"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Full Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_below="@+id/nama"
+                android:id="@+id/nim"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:hint="NIM"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+            <EditText
+                android:layout_below="@+id/nim"
+                android:id="@+id/nilai"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:hint="Nilai IP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_below="@+id/nilai"
+                android:id="@+id/huruf"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"/>
+
+            <Button
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/nilai"
+                android:id="@+id/btn_satu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="submit"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
